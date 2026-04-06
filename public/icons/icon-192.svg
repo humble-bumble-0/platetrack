@@ -1,0 +1,7 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='192' height='192'>
+<rect width='192' height='192' rx='42' fill='#0D0F1C'/>
+<circle cx='96' cy='96' r='76.80000000000001' fill='none' stroke='#3B82F6' stroke-width='7.68'/>
+<circle cx='96' cy='96' r='42.24' fill='none' stroke='#3B82F6' stroke-width='4.800000000000001'/>
+<circle cx='96' cy='96' r='15.36' fill='#3B82F6'/>
+<text x='96' y='184.32000000000002' text-anchor='middle' font-family='Arial' font-weight='900' font-size='17.28' fill='#60A5FA' letter-spacing='0.08em'>PLATETRACK</text>
+</svg>
