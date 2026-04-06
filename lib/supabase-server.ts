@@ -7,8 +7,8 @@ import { createClient as createAdminClient } from '@supabase/supabase-js'
 export function createSupabaseServerClient() {
   const cookieStore = cookies()
   return createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder',
     {
       cookies: {
         get(name: string)                              { return cookieStore.get(name)?.value },
@@ -21,8 +21,8 @@ export function createSupabaseServerClient() {
 
 export function createSupabaseAdmin() {
   return createAdminClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co',
+    process.env.SUPABASE_SERVICE_ROLE_KEY || 'placeholder',
     { auth: { persistSession: false, autoRefreshToken: false } }
   )
 }
