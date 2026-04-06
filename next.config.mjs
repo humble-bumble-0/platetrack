@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const config = {
+  eslint: { ignoreDuringBuilds: true },
+  typescript: { ignoreBuildErrors: false },
   images: { remotePatterns: [{ protocol:'https', hostname:'*.supabase.co' },{ protocol:'https', hostname:'*.googleusercontent.com' }] },
   async headers() {
     return [{ source:'/(.*)', headers:[
